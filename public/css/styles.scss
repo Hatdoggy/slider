@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;900&display=swap');
+@import "_var";
+@import "_def";
+@import "_struct";
+@import "_query";
+
+.aleg {
+  font-family: $aleg;
+  &-reg {
+    font-weight: 400;
+  }
+  &-blck {
+    font-weight: 900;
+  }
+}
+
+h1 {
+  font-size: clamp(2.5rem, 7vw, 7rem);
+}
+h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+h4 {
+  font-size: clamp(1.3rem, 1.5vw, 1.8rem);
+}
+p,
+button {
+  font-size: clamp(1rem, 1.1vw, 1.3rem);
+}
+small {
+  font-size: clamp(0.7rem, 0.8rem, 1rem);
+  line-height: 1.5;
+}
+
+.casumo{
+  width: clamp(50px,100px,110px);
+}
+
+input[type=range] {
+  height: 24px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #44CB68;
+  border-radius: 1px;
+  border: 0px solid #44CB68;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 10px #000014;
+  border: 2px solid #44CB68;
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  background: #44CB68;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5.5px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #44CB68;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #44CB68;
+  border-radius: 1px;
+  border: 0px solid #44CB68;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 10px #000014;
+  border: 2px solid #44CB68;
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  background: #44CB68;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #44CB68;
+  border: 0px solid #44CB68;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-fill-upper {
+  background: #44CB68;
+  border: 0px solid #44CB68;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 1px 1px 10px #000014;
+  border: 2px solid #44CB68;
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  background: #44CB68;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #44CB68;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #44CB68;
+}
+
