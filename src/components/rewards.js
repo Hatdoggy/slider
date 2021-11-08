@@ -1,6 +1,6 @@
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 
-const {prod} = window.txt; 
+const {cas,roul,poker,empty} = window.txt; 
 
 const Casino = (props)=>{
 
@@ -12,21 +12,20 @@ const Casino = (props)=>{
     <p className="aleg aleg-reg txt-al-ce custom hide"><span className="aleg-blck">{rewards[ctr].txt1}</span>{rewards[ctr].txt2}</p>
 
     <div className="trans set bg-grn brd flx flx-jc-ce w-100 m-t-2 flx-ai-ce p-20">
-        <span className="flx flx-col flx-jc-ce flx-ai-strt">
-        {ctr!=6&&<img src={prod[ctr].src} alt={prod[ctr].alt} className="prods w-30 rew fade"/>}
-            <img src="./img/casumo.png" alt="casumo" className="w-30 m-t-2"/>
-            <p className="txt-wht aleg aleg-reg m-t-2">{rewards[ctr].rew}</p>
+        <span className="w-100 flx flx-jc-ce flx-ai-ce ovr-hide">
+            {ctr===6&&<p className="w-100 txt-al-ce txt-wht aleg aleg-reg m-t-2">{empty}</p>}
+                {ctr!=6&&<img src={cas[ctr].src} alt={cas[ctr].alt} className="prods w-70 rew fade"/>}
         </span>
-        <button className="m-l-auto btn btn-trans btn-trans-1 aleg aleg-blck w-30 hide">{claim}</button>
+
     </div>
 
     <div className="trans set bg-drk brd flx flx-jc-ce w-100 flx-ai-ce p-20 m-t-2">
-        <span className="flx flx-col flx-jc-ce flx-ai-strt">
-        {ctr!=6&&<img src={prod[ctr].src2} alt={prod[ctr].alt2} className="prods w-30 rew fade"/>}
-            <img src="./img/casumo.png" alt="casumo" className="w-30 m-t-2"/>
-            <p className="txt-wht aleg aleg-reg m-t-2">{rewards[ctr].rew2}</p>
+
+        <span className="w-100 flx flx-jc-ce flx-ai-ce ovr-hide">
+            {ctr===6&&<p className="w-100 txt-al-ce txt-wht aleg aleg-reg m-t-2">{empty}</p>}
+            {ctr!=6&&<img src={cas[ctr].src2} alt={cas[ctr].alt2} className="prods w-70 rew fade"/>}
         </span>
-        <button className="m-l-auto btn btn-trans aleg aleg-blck btn-trans-2 w-30 hide">{claim}</button>
+
     </div>
 </div>
 }
@@ -41,21 +40,20 @@ const Roulette = (props)=>{
     <p className="aleg aleg-reg txt-al-ce custom hide"><span className="aleg-blck">{rewards[ctr].txt1}</span>{rewards[ctr].txt2}</p>
 
     <div className="trans set bg-grn brd flx flx-jc-ce w-100 m-t-2 flx-ai-ce p-20">
-        <span className="flx flx-col flx-jc-ce flx-ai-strt">
-        {ctr!=6&&<img src={prod[ctr].src} alt={prod[ctr].alt} className="prods w-30 rew fade"/>}
-            <img src="./img/casumo.png" alt="casumo" className="w-30 m-t-2"/>
-            <p className="txt-wht aleg aleg-reg m-t-2">{rewards[ctr].rew}</p>
+        <span className="w-100 flx flx-jc-ce flx-ai-ce ovr-hide">
+            {ctr===6&&<p className="w-100 txt-al-ce txt-wht aleg aleg-reg m-t-2">{empty}</p>}
+                {ctr!=6&&<img src={roul[ctr].src} alt={roul[ctr].alt} className="prods w-70 rew fade"/>}
         </span>
-        <button className="m-l-auto btn btn-trans btn-trans-1 aleg aleg-blck w-30 hide">{claim}</button>
+
     </div>
 
     <div className="trans set bg-drk brd flx flx-jc-ce w-100 flx-ai-ce p-20 m-t-2">
-        <span className="flx flx-col flx-jc-ce flx-ai-strt">
-        {ctr!=6&&<img src={prod[ctr].src2} alt={prod[ctr].alt2} className="prods w-30 rew fade"/>}
-            <img src="./img/casumo.png" alt="casumo" className="w-30 m-t-2"/>
-            <p className="txt-wht aleg aleg-reg m-t-2">{rewards[ctr].rew2}</p>
+
+        <span className="w-100 flx flx-jc-ce flx-ai-ce ovr-hide">
+            {ctr===6&&<p className="w-100 txt-al-ce txt-wht aleg aleg-reg m-t-2">{empty}</p>}
+            {ctr!=6&&<img src={roul[ctr].src2} alt={roul[ctr].alt2} className="prods w-70 rew fade"/>}
         </span>
-        <button className="m-l-auto btn btn-trans aleg aleg-blck btn-trans-2 w-30 hide">{claim}</button>
+
     </div>
 </div>
 }
@@ -70,28 +68,27 @@ const Poker = (props)=>{
     <p className="aleg aleg-reg txt-al-ce custom hide"><span className="aleg-blck">{rewards[ctr].txt1}</span>{rewards[ctr].txt2}</p>
 
     <div className="trans set bg-grn brd flx flx-jc-ce w-100 m-t-2 flx-ai-ce p-20">
-        <span className="flx flx-col flx-jc-ce flx-ai-strt">
-        {ctr!=6&&<img src={prod[ctr].src} alt={prod[ctr].alt} className="prods w-30 rew fade"/>}
-            <img src="./img/casumo.png" alt="casumo" className="w-30 m-t-2"/>
-            <p className="txt-wht aleg aleg-reg m-t-2">{rewards[ctr].rew}</p>
+        <span className="w-100 flx flx-jc-ce flx-ai-ce ovr-hide">
+            {ctr===6&&<p className="w-100 txt-al-ce txt-wht aleg aleg-reg m-t-2">{empty}</p>}
+            {ctr!=6&&<img src={poker[ctr].src} alt={poker[ctr].alt} className="prods w-70 rew fade"/>}
         </span>
-        <button className="m-l-auto btn btn-trans btn-trans-1 aleg aleg-blck w-30 hide">{claim}</button>
+
+
     </div>
 
     <div className="trans set bg-drk brd flx flx-jc-ce w-100 flx-ai-ce p-20 m-t-2">
-        <span className="flx flx-col flx-jc-ce flx-ai-strt">
-        {ctr!=6&&<img src={prod[ctr].src2} alt={prod[ctr].alt2} className="prods w-30 rew fade"/>}
-            <img src="./img/casumo.png" alt="casumo" className="w-30 m-t-2"/>
-            <p className="txt-wht aleg aleg-reg m-t-2">{rewards[ctr].rew2}</p>
+
+        <span className="w-100 flx flx-jc-ce flx-ai-ce ovr-hide">
+            {ctr===6&&<p className="w-100 txt-al-ce txt-wht aleg aleg-reg m-t-2">{empty}</p>}
+            {ctr!=6&&<img src={poker[ctr].src2} alt={poker[ctr].alt2} className="prods w-70 rew fade"/>}
         </span>
-        <button className="m-l-auto btn btn-trans aleg aleg-blck btn-trans-2 w-30 hide">{claim}</button>
+
     </div>
 </div>
 }
 
 const Rewards = (props)=>{
 
-    console.log(prod)
     const {ctr,cur} = props;
 
     return  cur.cas?

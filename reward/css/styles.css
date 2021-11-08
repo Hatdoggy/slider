@@ -782,12 +782,6 @@ span {
   -webkit-animation: 1s hide;
 }
 
-.fit {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .pulse {
   -webkit-animation: 1s pulse infinite;
           animation: 1s pulse infinite;
@@ -982,9 +976,7 @@ span {
     max-height: 100px !important;
   }
   .prods {
-    -o-object-fit: cover !important;
-       object-fit: cover !important;
-    width: 100% !important;
+    width: 70% !important;
   }
 }
 
