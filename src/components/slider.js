@@ -19,12 +19,17 @@ const Slider= (props)=>{
         let value = scrVal;
         let btns = document.querySelectorAll('.btn-trans');
         let mes = document.querySelector('p.custom');
+        let prods = document.querySelectorAll('.prods');
 
         setVal(value)
         set(value)
         
         if(value<250){
             btns.forEach(elem=>{
+                elem.classList.add('hide','fade-out')
+                elem.classList.remove('fade')
+            })
+            prods.forEach(elem=>{
                 elem.classList.add('hide','fade-out')
                 elem.classList.remove('fade')
             })
@@ -36,10 +41,16 @@ const Slider= (props)=>{
             btns.forEach(elem=>{
                 show(elem)
             })
+            prods.forEach(elem=>{
+                show(elem)
+            })
             show(mes)
             setCtr(5)
         }else if(value < 750){
             btns.forEach(elem=>{
+                show(elem)
+            })
+            prods.forEach(elem=>{
                 show(elem)
             })
             show(mes)
@@ -48,10 +59,16 @@ const Slider= (props)=>{
             btns.forEach(elem=>{
                 show(elem)
             })
+            prods.forEach(elem=>{
+                show(elem)
+            })
             show(mes)
             setCtr(3)
         }else if(value<1250){
             btns.forEach(elem=>{
+                show(elem)
+            })
+            prods.forEach(elem=>{
                 show(elem)
             })
             show(mes)
@@ -60,10 +77,16 @@ const Slider= (props)=>{
             btns.forEach(elem=>{
                 show(elem)
             })
+            prods.forEach(elem=>{
+                show(elem)
+            })
             show(mes)
             setCtr(1)
         }else{
             btns.forEach(elem=>{
+                show(elem)
+            })
+            prods.forEach(elem=>{
                 show(elem)
             })
             show(mes)

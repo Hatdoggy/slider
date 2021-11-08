@@ -296,6 +296,10 @@ span {
   height: 100%;
 }
 
+.h-95 {
+  height: 95%;
+}
+
 .h-90 {
   height: 90%;
 }
@@ -958,6 +962,7 @@ span {
   }
   main {
     width: 95% !important;
+    height: 80% !important;
   }
   main section {
     padding: 10px !important;
@@ -969,6 +974,9 @@ span {
   }
   .set {
     max-height: 100px !important;
+  }
+  .prods {
+    width: 50% !important;
   }
 }
 
