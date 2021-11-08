@@ -19,7 +19,7 @@ const Main = ()=>{
         maxi:window.txt.max
     }) 
 
-    return <main className="bg-drk flx flx-col flx-jc-sa flx-ai-ce p-20 w-30 h-80 fade-t">
+    return <main className="bg-glass flx flx-col flx-jc-sa flx-ai-ce p-20 w-30 h-80 fade-t">
         <Head/>
         <Nav cur={cur} set={setCur} bound={bound} setBound={setBound}/>
         <Slide val={init} set={setInit} cur={cur} bound={bound}/>

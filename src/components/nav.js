@@ -7,21 +7,21 @@ const Nav = (props)=>{
     const clicked = (val,targ)=>{
 
         const {cur,set,bound,setBound} = props;
-        let bef = document.querySelector('.btn-drkB');
-        bef.classList.remove('btn-drkB');
-        bef.classList.add('btn-tran');
+        let bef = document.querySelector('.btn-not');
+        bef.classList.remove('btn-not');
+        bef.classList.add('btn-glass');
         let value = 1500;
 
         let btn = undefined;
 
-        targ.classList.remove('.btn-drkB');
-        targ.classList.add('.btn-tran');
+        targ.classList.remove('.btn-not');
+        targ.classList.add('.btn-glass');
         
         switch (val) {
             case 1:
                 btn = document.querySelector('.cas');
-                btn.classList.remove('btn-tran');
-                btn.classList.add('btn-drkB');
+                btn.classList.remove('btn-glass');
+                btn.classList.add('btn-not');
 
                set({
                    cas:true,
@@ -32,8 +32,8 @@ const Nav = (props)=>{
             break;
             case 2:
                 btn = document.querySelector('.roul');
-                btn.classList.remove('btn-tran');
-                btn.classList.add('btn-drkB');
+                btn.classList.remove('btn-glass');
+                btn.classList.add('btn-not');
 
                 set({
                     cas:false,
@@ -44,8 +44,8 @@ const Nav = (props)=>{
             break;      
             default:
                 btn = document.querySelector('.poke');
-                btn.classList.remove('btn-tran');
-                btn.classList.add('btn-drkB');
+                btn.classList.remove('btn-glass');
+                btn.classList.add('btn-not');
 
                 set({
                     cas:false,
@@ -61,10 +61,10 @@ const Nav = (props)=>{
         })
     }
 
-    return <nav className="w-90 bg-not flx flx-jc-ce flx-ai-ce brd m-t-2">
-            <button className="btn btn-drkB txt-wht aleg aleg-reg txt-al-ce cas" onClick={(elem)=>clicked(1,elem.target)}>{btns[0]}</button>
-            <button className="btn btn-tran txt-wht aleg aleg-reg txt-al-ce roul" onClick={(elem)=>clicked(2,elem.target)}>{btns[1]}</button>
-            <button className="btn btn-tran txt-wht aleg aleg-reg txt-al-ce poke" onClick={(elem)=>clicked(3,elem.target)}>{btns[2]}</button>
+    return <nav className="w-90 flx flx-jc-ce flx-ai-ce brd m-t-2">
+            <button className="btn btn-not txt-wht aleg aleg-reg txt-al-ce cas" onClick={(elem)=>clicked(1,elem.target)}>{btns[0]}</button>
+            <button className="btn btn-glass txt-wht aleg aleg-reg txt-al-ce roul m-l-2 m-r-2" onClick={(elem)=>clicked(2,elem.target)}>{btns[1]}</button>
+            <button className="btn btn-glass txt-wht aleg aleg-reg txt-al-ce poke" onClick={(elem)=>clicked(3,elem.target)}>{btns[2]}</button>
     </nav>
 }
 
